@@ -1,10 +1,13 @@
 <template>
-  <view class="header">
-    <text class="title">{{ title }}</text>
-  </view>
+  <SafeAreaView forceInset={{bottom: 'never'}}>
+    <view class="header">
+      <text class="title">{{ title }}</text>
+    </view>
+  </SafeAreaView>
 </template>
 
 <script>
+import { SafeAreaView } from 'react-native-safe-area-view';
 export default {
   props: ['title']
 }

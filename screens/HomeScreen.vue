@@ -21,7 +21,7 @@
     </view>
 
     <touchable-opacity :on-press="handleButton" :style="{backgroundColor: 'red', padding: 10}">
-      <text class="btn-text">Switch Screen</text>
+      <text class="btn-text switch">Switch Screen</text>
     </touchable-opacity>
   </view>
 </template>
@@ -39,7 +39,6 @@ export default {
   data () {
     return {
       newTodoText: '',
-      switch: '',
       todos: [
         {
           id: 0,
@@ -115,7 +114,13 @@ export default {
 .todo {
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
+}
+.switch {
+  /* flex-direction: row; */
+  text-align: center;
+  padding: 5px;
 }
 .todo-text {
   font-size: 18px;
